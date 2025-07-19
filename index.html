@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sheet Happens - טפסים חכמים לעסק שלך</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            background-color: #f9f9fb;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .logo-container img {
+            height: 195px;
+            width: auto;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 15px 0 0 0;
+            color: #333;
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .testimonials {
+            background-color: #f0f4f8;
+            border-radius: 30px;
+            padding: 30px;
+        }
+
+        .testimonial {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        form {
+            background: #f5f7fa;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 16px;
+            margin: 15px 0;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        form input[type="tel"] {
+            text-align: right;
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        form button {
+            background: #4A90E2;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #357ABD;
+        }
+
+        .full-width-section {
+            grid-column: 1 / -1;
+        }
+
+        footer {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            font-size: 15px;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Sheet Happens Logo">
+        </div>
+        <p>טפסים חכמים שמחוברים בדיוק לגיליון שלך</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>למה Sheet Happens?</h2>
+            <p>העסק שלך לא צריך מערכות כבדות או פתרונות יקרים – אנחנו נבנה עבורך טופס ממוקד, אלגנטי ומדויק, שמזין
+                אוטומטית את כל הנתונים לגיליון גוגל שיטס שלך. פשוט, חכם ולעניין.</p>
+            <ul>
+                <li>חיבור אוטומטי מלא לשיטס</li>
+                <li>עיצוב מודרני ומקצועי</li>
+                <li>התאמה אישית לפי הצורך</li>
+                <li>מענה מהיר וליווי אישי</li>
+            </ul>
+            <a href="#contact" class="button">בואו נדבר על הטופס שלכם</a>
+        </section>
+
+        <section class="testimonials">
+            <h2>מה אומרים הלקוחות שלנו?</h2>
+            <div class="testimonial">
+                <p>"שירות מושלם! קיבלנו טופס מעוצב שמתחבר לגיליון שלנו. הכל עובד כמו קסם."</p>
+                <strong>לימור ר. | סטודיו לעיצוב</strong>
+            </div>
+            <div class="testimonial">
+                <p>"תוך יומיים קיבלנו פתרון מלא לעסק. שחר עשה עבודה מקצועית וליווה אותנו אישית."</p>
+                <strong>יוסי ב. | בעל חנות</strong>
+            </div>
+            <div class="testimonial">
+                <p>"פתרון פשוט וגאוני. כל פנייה מלקוח נכנסת אוטומטית לטבלה. ממליצה לכל עסק!"</p>
+                <strong>נטע ש. | יועצת עסקית</strong>
+            </div>
+        </section>
+
+        <section class="full-width-section" id="contact">
+            <h2>צור קשר</h2>
+            <p>מלאו את הפרטים ואחזור אליכם עם פתרון מותאם אישית לעסק שלכם:</p>
+            <form>
+                <input type="text" placeholder="שם מלא" required>
+                <input type="email" placeholder="אימייל" required>
+                <input type="tel" placeholder="טלפון" required>
+                <textarea placeholder="ספרו לנו בקצרה איך נוכל לעזור לכם..." required></textarea>
+                <button type="submit">שלחו לי פרטים</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        © Sheet Happens - כל הזכויות שמורות
+    </footer>
+
+</body>
+
+</html>
