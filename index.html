@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sheet Happens - טפסים חכמים לעסק שלך</title>
+    <title>Sheetly - טפסים חכמים לעסק שלך</title>
     <style>
         body {
-            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #f9f9fb;
             margin: 0;
             padding: 0;
@@ -20,24 +20,22 @@
             text-align: center;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
         }
 
-        .logo-container img {
-            height: 195px;
+        header h1 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header img {
+            max-height: 150px;
             width: auto;
         }
 
         header p {
             font-size: 20px;
             margin: 15px 0 0 0;
-            color: #333;
-            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
-            font-weight: 500;
         }
 
         .container {
@@ -113,13 +111,17 @@
             box-sizing: border-box;
         }
 
+        form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
         form input[type="tel"] {
             text-align: right;
         }
 
-        form textarea {
-            resize: vertical;
-            min-height: 120px;
+        form input[type="tel"]::placeholder {
+            text-align: right;
         }
 
         form button {
@@ -165,16 +167,14 @@
 <body>
 
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="Sheet Happens Logo">
-        </div>
-        <p>טפסים חכמים שמחוברים בדיוק לגיליון שלך</p>
+        <img src="logo.png" alt="Sheetly">
+        <p>טפסים חכמים שמחוברים ישירות לגוגל שיטס שלך</p>
     </header>
 
     <div class="container">
 
         <section>
-            <h2>למה Sheet Happens?</h2>
+            <h2>למה Sheetly?</h2>
             <p>העסק שלך לא צריך מערכות כבדות או פתרונות יקרים – אנחנו נבנה עבורך טופס ממוקד, אלגנטי ומדויק, שמזין
                 אוטומטית את כל הנתונים לגיליון גוגל שיטס שלך. פשוט, חכם ולעניין.</p>
             <ul>
@@ -217,7 +217,7 @@
     </div>
 
     <footer>
-        © Sheet Happens - כל הזכויות שמורות
+        © Sheetly - כל הזכויות שמורות
     </footer>
 
 </body>
